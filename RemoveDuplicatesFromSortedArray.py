@@ -20,6 +20,7 @@ class Solution1:
                 i += 1
         return len(nums)
 
+
 # Faster but still not fast enough
 class Solution2:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -31,6 +32,7 @@ class Solution2:
                 prev = cur
                 cur += 1
         return len(nums)
+
 
 # So technically, don't need to remove element; based on question, can ignore anything after the returned index
 class Solution3:
