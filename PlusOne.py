@@ -43,16 +43,16 @@ class Solution3:
 
         # Complicated case
         carry = True
-        index = -1
+        i = -1
         while carry:
-            if abs(index) > len(digits):
+            if abs(i) > len(digits):
                 # Add an extra 1
                 digits.insert(0, 1)
                 return digits
-            if digits[index] == 9:
-                digits[index] = 0
+            if digits[i] == 9:
+                digits[i] = 0
             else:
-                digits[index] += 1
+                digits[i] += 1
                 carry = False
-            index -= 1
+            i -= 1
         return digits
