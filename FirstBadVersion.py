@@ -10,7 +10,7 @@ Created on Sun Jun 26 2022
 
 # The most straightforward way is to loop through n
 # But the most efficient way is to do binary search O(log(n))
-class Solution:
+class Solution1:
     def firstBadVersion(self, n: int) -> int:
         def check(low, high):
             mid = (low + high) // 2
